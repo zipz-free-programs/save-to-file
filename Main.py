@@ -1,3 +1,13 @@
 import os
 fname = (input("first name: "))
 lname = (input("last name: "))
+date = (input("date: "))
+age = (input("age: "))
+DOB = (input("Date of birth: "))
+file = open("DATABASE.txt", "w")
+file.write("First name = " + fname + "\n" + "Last name = "+ lname + "\n" + "date = " + date + "\n" + "age = " + age + "\n" + "Date of birth = " + DOB + "\n" + "-----------------")
+file.close()
+print ("SAVED")
+os.system("pause")
+os.system("start Main.py")
+os.system("exit")
